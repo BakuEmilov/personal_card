@@ -18,3 +18,33 @@ export type IRightData = {
   dateOfIssue: string;
   endDate: string;
 };
+
+export type IPlaceOfBirth = {
+  country: string;
+  area: string;
+  districtsOfTheRegions: string;
+  city: string;
+  village: string;
+  street: string;
+  areaOfTheCity: string;
+};
+
+export type IPlaceOfRegistration = {
+  country: string;
+  area: string;
+  districtsOfTheRegions: string;
+  city: string;
+  village: string;
+  street: string;
+  areaOfTheCity: string;
+};
+
+export type IPlaceOfResidence = {
+  country: string;
+  area: string;
+  districtsOfTheRegions: string;
+  city: string;
+  village: string;
+  street: string;
+  areaOfTheCity: string;
+};

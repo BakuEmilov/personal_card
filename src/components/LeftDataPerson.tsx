@@ -5,20 +5,13 @@ import React from "react";
 const LeftDataPerson = () => {
   return (
     <div className="">
-      <TextData className="p-2" label="Пол" value={leftData.gender} />
+      <TextData label="Пол" value={leftData.gender} />
 
-      <TextData
-        className="p-2"
-        label="Дата рождения"
-        value={leftData.dateOfBirth}
-      />
+      <TextData label="Дата рождения" value={leftData.dateOfBirth} />
 
-      <TextData
-        className="p-2"
-        label="Номер телефона"
-        value={leftData.phoneNumber}
-      />
-      <TextData className="p-2" label="Email" value={leftData.email} />
+      <TextData label="Номер телефона" value={leftData.phoneNumber} />
+      
+      <TextData label="Email" value={leftData.email} />
     </div>
   );
 };

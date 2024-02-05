@@ -9,7 +9,7 @@ type ITextData = {
 
 const TextData: React.FC<ITextData> = ({ label, value, className }) => {
   return (
-    <div className={className}>
+    <div className={`${className} p-2`}>
       <span className="font-medium">{label}:&nbsp;</span>
       <span>{value}</span>
     </div>

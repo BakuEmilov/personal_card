@@ -17,7 +17,7 @@ export default function Home() {
   });
 
   return (
-    <div className="max-w-[1200px] m-auto">
+    <div className="max-w-[1100px] m-auto">
       <div className="flex justify-end">
         <PrintButton onClick={handlePrint} />
       </div>

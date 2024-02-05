@@ -9,7 +9,7 @@ type IButton = {
 const PrintButton: React.FC<IButton> = ({ onClick, className }) => {
   return (
     <button className={`${className} m-4`} onClick={onClick}>
-      <CiSaveDown2 size={40}/>
+      <CiSaveDown2 size={40} />
     </button>
   );
 };

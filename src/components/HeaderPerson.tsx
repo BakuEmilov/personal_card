@@ -5,15 +5,11 @@ import React from "react";
 const HeaderPerson = () => {
   return (
     <div>
-      <TextData className="p-2" label="Фамилия" value={headerPerson.surName} />
+      <TextData label="Фамилия" value={headerPerson.surName} />
 
-      <TextData className="p-2" label="Имя" value={headerPerson.name} />
+      <TextData label="Имя" value={headerPerson.name} />
 
-      <TextData
-        className="p-2"
-        label="Отчество"
-        value={headerPerson.middleName}
-      />
+      <TextData label="Отчество" value={headerPerson.middleName} />
     </div>
   );
 };
