@@ -1,5 +1,5 @@
 import { placeOfBirth, placeOfResidence } from "@/constants/personData";
-import TextData from "@/ui/TextData";
+import TextData from "@/ui/textData/TextData";
 import React from "react";
 
 const PlaceDataPerson = () => {

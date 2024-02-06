@@ -1,8 +1,9 @@
 import { headerPerson } from "@/constants/personData";
-import TextData from "@/ui/TextData";
-import React from "react";
+import TextData from "@/ui/textData/TextData";
+import React, { useState } from "react";
 
 const HeaderPerson = () => {
+
   return (
     <div>
       <TextData label="Фамилия" value={headerPerson.surName} />

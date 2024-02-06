@@ -10,6 +10,8 @@ import PlaceDataPerson from "@/components/PlaceDataPerson";
 import RightDataPerson from "@/components/RightDataPerson";
 import PrintButton from "@/ui/PrintButton";
 
+import "./globals.css";
+
 export default function Home() {
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
@@ -21,7 +23,7 @@ export default function Home() {
       <div className="flex justify-end">
         <PrintButton onClick={handlePrint} />
       </div>
-      <div ref={componentRef} className="print-container">
+      <div ref={componentRef}>
         <div className="flex">
           <div className="bg-zinc-200 rounded-xl shadow-lg m-4 p-4">
             <ImagePerson />
@@ -31,7 +33,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row">
+        <div className="left-right flex flex-col md:flex-row">
           <div className="bg-zinc-200 rounded-xl shadow-lg md:w-1/2 m-4 p-4">
             <LeftDataPerson />
           </div>

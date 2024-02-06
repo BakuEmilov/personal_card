@@ -12,7 +12,8 @@ const ImagePerson = () => {
         alt="profile"
         width={200}
         height={200}
-        className="border-black border-2 rounded-full"
+        className="rounded-full"
+        priority={true}
       />
     </div>
   );
