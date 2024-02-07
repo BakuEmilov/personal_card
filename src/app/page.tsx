@@ -13,7 +13,9 @@ import PrintButton from "@/ui/PrintButton";
 import "./globals.css";
 
 export default function Home() {
-  const componentRef = useRef();
+  
+  const componentRef = useRef<HTMLDivElement>(null);
+
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
   });
