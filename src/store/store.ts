@@ -1,3 +1,5 @@
+import authReducer from "../redux/authSlice";
+
 import { configureStore } from "@reduxjs/toolkit";
 import { combineReducers } from "redux";
 
@@ -5,7 +7,9 @@ const rootReducer = combineReducers({});
 
 export const setupStore = () => {
   return configureStore({
-    reducer: rootReducer,
+    reducer: {
+      auth: authReducer,
+    },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(),
   });
 };
